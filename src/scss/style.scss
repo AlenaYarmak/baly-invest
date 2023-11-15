@@ -20,3 +20,107 @@ input:focus{
 li {
     list-style-type: none;
 }
+
+/* COMMON */
+:root {
+    --main-color: #1D3862;
+    --second-color: #000;
+}
+
+.title {
+    color: var(--main-color);
+    font-family: 'PT Serif', serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: min(max(32px, 3.1vw), 59px);
+    text-transform: uppercase;
+    &-title {
+        color: var(--main-color);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: min(max(32px, 3.1vw), 58px);
+    text-transform: uppercase;
+    }
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    height: 100vh;
+    &__logo {
+        width: 95px;
+        padding-top: 24px;
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__contacts {
+        width: 312px;
+    }
+    &__contacts::before {
+        content: '';
+        background: var(--second-color);
+        display: block;
+        width: 312px;
+        height: 1px;
+    }
+    &__socials {
+        display: flex;
+        max-width: 138px;
+        width: 100%;
+        justify-content: space-between;
+    }
+    &__background {
+        background-image: url(../img/background-img.png);
+        background-size: cover;
+        flex-basis: 50%;
+        width: 100%;
+        position: relative;
+    }
+    &__arrow {
+        position: absolute;
+        height: 46px;
+        width: 46px;
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%, -50%);
+        bottom: 69px;
+    }
+    &__arrow:hover svg circle {
+        fill: #FFF;
+        transition: fill 0.3s ease;
+    }
+    &__arrow:hover svg path {
+        fill: #1D3862;
+        transition: fill 0.3s ease;
+    }
+}
+
+.wrapper__contact {
+    padding-bottom: 51px;
+    display: flex;
+    align-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact {
+    &__item {
+        text-align: center;
+        padding-top: 3px;
+    }
+    &__item:nth-child(1) {
+        padding-top: 30px;
+    }
+    &-link {
+        color: var(--second-color);
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 21px;
+        padding-bottom: 10px;
+    }
+}
