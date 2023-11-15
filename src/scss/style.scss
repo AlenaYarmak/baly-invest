@@ -215,6 +215,64 @@ li {
     }
 }
 
+/* PARTNER */
+.partner {
+    margin-top: -1px;
+    margin-bottom: -1px;
+    &__inner {
+        background-image: url(../img/partner-bg.png);
+        background-size: cover;
+    }
+    &__description {
+        color: #FFF;
+        padding-top: 190px;
+        padding-bottom: 195px;
+        margin: 0 auto;
+    }
+    &__title-light {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 300;
+        font-style: italic;
+        font-size: min(max(32px, 3.2vw), 58px);
+        text-transform: uppercase;
+    }
+    &__title {
+        font-family: 'PT Serif', serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: min(max(32px, 3.1vw), 59px);
+        text-transform: uppercase;
+    }
+}
+
+/* announcement*/
+.announcement {
+    &__inner {
+        background-image: url(../img/announcement-bg.png);
+        background-size: cover;
+        background-position: center center;
+    }
+    &__description {
+        color: #FFF;
+        text-align: right;
+        margin: 0 auto;
+    }
+    &__title {
+        font-family: 'PT Serif', serif;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+    &__title-light {
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase; 
+    }
+}
+
 /* MEDIA */
 @media (max-width: 576px) {
     .header {
@@ -348,10 +406,38 @@ li {
             padding-top: 24px;
             padding-bottom: 16px;
         }
-        
     }
     .title-light-services {
         display: block;
         text-align: left;
+    }
+    .partner {
+        &__inner {
+            background-image: url(../img/partner-bg-s.png);
+            background-size: cover;
+        }
+        &__description {
+            width: 80%;
+        }
+        &__title, &__title-light {
+            font-size: 32px;
+        }
+    }
+    .announcement {
+        &__inner {
+            background-image: url(../img/announcement-bg-s.png);
+            min-height: 888px;
+        }
+        &__description  {
+            padding: 68px 35px;
+            white-space: wrap;
+            text-align: left;
+        }
+        &__title {
+            font-size: 24px;
+        }
+        &__title-light {
+            font-size: 24px;
+        }
     }
 }
