@@ -6,7 +6,6 @@ global.app = {
     gulp: gulp
 }
 
-import { copy } from './gulp/tasks/copy.js';
 import { reset } from './gulp/tasks/reset.js';
 import { html } from './gulp/tasks/html.js';
 import { scss } from './gulp/tasks/scss.js';
@@ -21,7 +20,7 @@ function watcher() {
     gulp.watch(path.watch.images, images);
 }
 
-const mainTasks = gulp.parallel(copy, html, scss, js, images);
+const mainTasks = gulp.parallel(html, scss, js, images);
 
 //first we empty folder, second cope, third watch
 const dev = gulp.series(reset, mainTasks, watcher);
