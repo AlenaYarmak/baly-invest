@@ -947,3 +947,74 @@ li {
         }
     }
 }
+@media (min-width: 1440px) {
+    .header {
+        &__title {
+            padding-left: 18px;
+        }
+        &__title:nth-child(2) {
+            padding-left: 48px;
+        }
+        &__button {
+            padding-top: 46px;
+        }
+    }
+    .advantages {
+        &__wrapper {
+            padding: 186px 173px;
+        }
+        &__description {
+            padding: 53px 0px;
+            padding-right: 60px;
+        }
+        &__item:not(:first-of-type) {
+            margin-top: -15%;
+        }
+    }
+    .services {
+        &__title {
+            padding-top: 100px;
+            padding-bottom: 24px;
+        }
+        &__title-main-2 {
+            font-size: 44px;
+        }
+        &__title {
+            padding-top: 119px;
+        }
+    }
+    .announcement {
+        &__inner {
+            min-height: 1444px;
+        }
+        &__description {
+            width: 100%;
+        }
+        &__title {
+            font-size: 33px;
+            padding-right: 140px;
+        }
+        &__title-light {
+            font-size: 34px;
+        }
+        &__title-light:nth-child(odd) {
+            padding-left: 75px;
+        }
+    }
+    .footer {
+        &__inner {
+            padding: 101px 130px;
+        }
+        &__logo {
+            width: 133px;
+            height: 67px;
+            margin-bottom: 66px;
+        }
+        &__socials {
+            padding-top: 20px;
+        }
+    }
+    .contact__title {
+        font-size: 52px;
+    }
+}
