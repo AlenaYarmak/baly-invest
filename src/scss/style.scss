@@ -21,6 +21,18 @@ li {
     list-style-type: none;
 }
 
+input[type=number] {
+    appearance: textfield;
+  }
+  
+  select:focus {
+      outline: none;
+  }
+  
+  select {
+      border: none;
+  }
+
 /* COMMON */
 :root {
     --main-color: #1D3862;
@@ -628,6 +640,8 @@ li {
         }
         &__image {
             visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.3s linear;
         }
     }
     .services {
@@ -1028,4 +1042,5 @@ li {
 }
 .hovered {
     visibility: visible;
+    opacity: 1;
 }
