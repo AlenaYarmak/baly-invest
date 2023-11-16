@@ -229,7 +229,7 @@ input[type=number] {
 
 /* PARTNER */
 .partner {
-    margin-top: -1px;
+    margin-top: -2px;
     margin-bottom: -1px;
     &__inner {
         background-image: url(../img/partner-bg.png);
@@ -752,7 +752,7 @@ input[type=number] {
         width: 66%;
     }
     .advantages {
-        &:not(:first-of-type) {
+        &__item:not(:first-of-type) {
             margin-top: -14%;
         }
         &__wrapper {
@@ -1038,6 +1038,114 @@ input[type=number] {
         width: 203px;
         height: 50px;
         margin-top: 59px;
+    }
+}
+@media (min-width: 1920px) {
+    .header {
+        &__title {
+            padding-left: 28px;
+        }
+        &__socials {
+            padding-top: 24px;
+        }
+        &__title:nth-child(2) {
+            padding-left: 88px;
+        }
+        &__button {
+            width: 270px;
+            padding-top: 66px;
+        }
+        &-btn {
+            width: 270px;
+            height: 67px;
+        }
+        &__arrow svg {
+            width: 61px;
+            height: 61px;
+        }
+    }
+    .advantages {
+        &__wrapper {
+            padding: 216px 173px;
+        }
+        &__description {
+            padding: 63px 0px;
+            padding-right: 130px;
+        }
+        &__description__title {
+            font-size: 32px;
+        }
+        &__description__text {
+            font-size: 27px;
+        }
+    }
+    .services {
+        &__title {
+            padding-top: 119px;
+            padding-bottom: 25px;
+        }
+        &__title, &__item-inner, &__count {
+            font-size: 32px;
+        }
+        &__text {
+            font-size: 27px;
+        }
+    }
+    .partner__description {
+        max-width: 1400px;
+    }
+    .announcement {
+        &__title {
+            font-size: 44px;
+            padding-right: 140px;
+        }
+        &__title-light {
+            font-size: 45px;
+        }
+        &__title-light:nth-child(odd) {
+            padding-left: 130px;
+        }
+        &__title-light:nth-child(odd) {
+            padding-left: 130px;
+        }
+        &__title-light:nth-child(even) {
+            padding-top: 21px;
+            padding-bottom: 23px;
+        }
+    }
+    .footer {
+        &__inner {
+            padding: 135px 173px;
+        }
+        &__logo {
+            width: 177px;
+            height: 90px;
+            margin-bottom: 88px;
+        }
+        &__link {
+            font-size: 25px;
+        }
+        &__socials {
+            padding-top: 28px;
+        }
+        &__copyright {
+            font-size: 21px;
+            padding-top: 100px;
+            padding-bottom: 87px;
+            padding-left: 173px;
+        }
+    }
+    .contact__title {
+        font-size: 70px;
+    }
+    .form__input {
+        height: 100px;
+    }
+    .submit__button {
+        font-size: 21px;
+        width: 270px;
+        height: 67px;
+        margin-top: 79px;
     }
 }
 .hovered {
