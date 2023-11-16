@@ -819,3 +819,87 @@ li {
         margin-top: 39px;
     }
 }
+
+@media (min-width: 992px) {
+    .advantages {
+        &__wrapper {
+            padding: 96px 173px;
+        }
+        &__item:not(:first-of-type) {
+            margin-top: -25%;
+        }
+        &__description {
+            padding: 30px 0px;
+            padding-right: 33px;
+        }
+    }
+    .services {
+        &__item {
+            padding: 45px;
+        }
+        &__text {
+            font-size: 20px;
+        }
+        &__title {
+            padding-top: 40px;
+            padding-bottom: 20px;
+        }
+        &__title, &__item-inner, &__count {
+            font-size: 24px;
+        }
+    }
+    .partner {
+        &__title {
+            padding-left: 86px;
+        }
+        &__title-light:nth-child(2) {
+            text-align: right;
+            padding-right: 13px;
+        }
+        &__title:nth-child(even) {
+            text-align: right;
+            padding-right: 67px;
+        }
+    }
+    .announcement {
+        &__inner {
+            min-height: 1084px;
+        }
+        &__title {
+            font-size: 26px;
+        }
+        &__title-light {
+            font-size: 27px;
+        }
+    }
+    .footer {
+        &__inner {
+            padding: 101px 130px;
+        }
+        &__logo {
+            width: 133px;
+            height: 67px;
+            margin-bottom: 66px;
+        }
+        &__link {
+            font-size: 19px;
+        }
+        &__copyright {
+            font-size: 16px;
+            padding-top: 67px;
+            padding-bottom: 65px;
+            padding-left: 130px;
+        }
+    }
+    .form__input {
+        height: 68px;
+    }
+    .contact__title {
+        font-size: 42px;
+    }
+    .submit__button {
+        width: 180px;
+        height: 46px;
+        margin-top: 49px;
+    }
+}
