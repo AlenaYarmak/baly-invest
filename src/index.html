@@ -233,14 +233,17 @@
                                 <input class="form__input" type="number" id="phone" name="phone" placeholder="Phone number" required>
                             </div>
                               <div class="form-group">
-                                <select class="dropdown">
-                                    <option class="opt" selected>Property and land sales</option>
-                                    <option class="opt">Due Diligence and Investment Solutions</option>
-                                    <option class="opt">Marketing</option>
-                                    <option class="opt">Legal and financial support</option>
-                                    <option class="opt">Design and Branding</option>
-                                    <option class="opt">Object Visualization</option>
-                                  </select>
+                                <div class="dropdown">
+                                    <div class="dropdown__selected">Property and land sales</div>
+                                    <div class="dropdown__options" style="display: none;">
+                                        <div class="dropdown__option">Property and land sales</div>
+                                        <div class="dropdown__option">Due Diligence and Investment Solutions</div>
+                                        <div class="dropdown__option">Marketing</div>
+                                        <div class="dropdown__option">Legal and financial support</div>
+                                        <div class="dropdown__option">Design and Branding</div>
+                                        <div class="dropdown__option">Object Visualization</div>
+                                    </div>
+                                </div>
                               </div>
                             <div class="form-group">
                                 <button class="submit__button" type="submit">Send</button>

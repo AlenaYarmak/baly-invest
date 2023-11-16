@@ -360,9 +360,7 @@ input[type=number] {
 .dropdown {
     position: relative;
     display: inline-block;
-    margin-top: 10px;
-    padding-top: 22px;
-    padding-bottom: 32px;
+    margin-top: 15px;
     background-color: var(--main-color);
     font-family: 'Raleway';
     font-weight: 400;
@@ -371,27 +369,24 @@ input[type=number] {
     width: 100%;
     border-bottom: 1px solid #ffffff;
     max-width: 826px;
-}
-  
-.selected-option {
-    padding: 10px;
-    border: 1px solid #ccc;
     cursor: pointer;
-}
-  
-.options {
-    display: none;
-    position: absolute;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    border: 1px solid #ccc;
-    width: 100%;
-    background-color: var(--main-color);
-}
-
-.opt {
-    padding: 10px;
+    &__selected {
+        padding-top: 22px;
+        padding-bottom: 32px;
+    }
+    &__selected-active {
+        padding: 10px 0px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.9);
+    }
+    &__option {
+        transition: color .3s;
+        padding: 6px 0px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    &__option:hover {
+        color: #000;
+    }
 }
 /* MEDIA */
 @media (max-width: 576px) {
